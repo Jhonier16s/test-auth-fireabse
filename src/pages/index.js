@@ -11,7 +11,7 @@ export default function Home() {
     router.push("/login");
   };
 
-  console.log(user);  
+ /*  console.log(user);   */
   useEffect(() => {
     if (user) {
       router.push("/dashboard");

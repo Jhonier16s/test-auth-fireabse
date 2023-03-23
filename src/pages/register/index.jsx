@@ -15,7 +15,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(user);
+   /*  console.log(user); */
 
     try {
       await singUp(user.email, user.password);

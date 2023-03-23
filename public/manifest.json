@@ -1,0 +1,17 @@
+{
+    "name":"Next auth firebase",
+    "short_name":"Next auth pwa",
+    "icons":[
+        {
+            "src": "icon-192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        }
+    ],
+    "start_url":"/",
+    "display":"standalone",
+    "background_color":"#0070F3",
+    "theme_color":"#fff",
+    "orientation":"portrait",
+    "scope":"/"
+}

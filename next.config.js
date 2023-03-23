@@ -7,7 +7,9 @@ const withPWA = require("next-pwa")({
     buildExcludes: [/middleware-manifest.json$/],
 });
 
-const nextConfig = withPWA({
-    // next config
+module.exports = withPWA({
+  images: {
+    domains: ['lh3.googleusercontent.com'],
+  },
+  // Otros valores de configuración de Next.js van aquí
 });
-module.exports = nextConfig;

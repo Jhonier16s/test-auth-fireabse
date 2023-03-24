@@ -27,11 +27,12 @@ export const loginWithGoogle = () => {
   return signInWithPopup(auth, provider);
 };
 
+
 export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
-  const singUp = (email, password) =>
-    createUserWithEmailAndPassword(auth, email, password);
+  const singUp = async (email, password) =>
+    await createUserWithEmailAndPassword(auth, email, password);
   const login = async (email, password) =>
     await signInWithEmailAndPassword(auth, email, password);
 
